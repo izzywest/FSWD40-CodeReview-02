@@ -29,36 +29,28 @@
             </nav>
         </header>
     </div>
-    <div class="offer-text">
-        <h2>Best offers of the month: </h2>
-        <br>
-        <h3>Get our special offer ... &#42;</h3>
-        <br>
-        <p><a class="flash" href="invoice.html">!CLICK HERE!</a></p>
-        <h4>... two cities with 10% off!</h4>
-        <br>
-        <small>&#42;Only for GoldenCard members</small>
-        <br>
-        <br>
+    <!-- div to choose between 3 options -->
+    <div>
+        <h2>Choose your destination(s):</h2>
+        <br> Berlin:
+        <input type="checkbox" id="checkBerlin" onclick="myFunction1()">
+        <var id="ckBerlin" style="display:none">You choosed Berlin. Your total cost is 1050€.</var>
+        </var>
+        <br> Frankfurt:
+        <input type="checkbox" id="checkFrankfurt" onclick="myFunction2()">
+        <var id="ckFrankfurt" style="display:none">You choosed Frankfurt. Your total cost is 950€.</var>
+        </var>
+        <br> Special offer: Frankfurt and Berlin:
+        <input type="checkbox" id="checkBoth" onclick="myFunction3()">
+        <var id="ckBoth" style="display:none">You choosed our special offer for GoldenCard members! Your total cost is 1800€.</var>
+        <var id="memberNumber" style="display:none">GoldenCard member id:
+            <input type="text" name="memberID" value="please enter your ID" required>
+        </var>
+        <var id="okay" style="display:none">
+            <button onclick="location.href='success.html'" type="button">Book now!</button>
+        </var>
     </div>
-    <div class="flex-container">
-        <div>
-            <div>
-                <img class="city" src="pictures/berlin.jpg" alt="Berlin Brandenburger Tor">
-                <figure>
-                    <figcaption>Berlin !</figcaption>
-                    <figcaption>Price: 1050€</figcaption>
-                </figure>
-            </div>
-            <div>
-                <img class="city" src="pictures/frankfurt.jpg" alt="Skyline Frankfurt">
-                <figure>
-                    <figcaption>Frankfurt !</figcaption>
-                    <figcaption>Price: 950€</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 <footer id="footer">
     Copyright S. Westenberger - 2018

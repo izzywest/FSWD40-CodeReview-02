@@ -29,33 +29,39 @@
             </nav>
         </header>
     </div>
-    <div class="offer-text">
-        <h2>Best offers of the month: </h2>
+    <div>
         <br>
-        <h3>Get our special offer ... &#42;</h3>
-        <br>
-        <p><a class="flash" href="invoice.html">!CLICK HERE!</a></p>
-        <h4>... two cities with 10% off!</h4>
-        <br>
-        <small>&#42;Only for GoldenCard members</small>
+        <h1>Any questions?</h1>
         <br>
         <br>
-    </div>
-    <div class="flex-container">
         <div>
             <div>
-                <img class="city" src="pictures/berlin.jpg" alt="Berlin Brandenburger Tor">
-                <figure>
-                    <figcaption>Berlin !</figcaption>
-                    <figcaption>Price: 1050€</figcaption>
-                </figure>
-            </div>
-            <div>
-                <img class="city" src="pictures/frankfurt.jpg" alt="Skyline Frankfurt">
-                <figure>
-                    <figcaption>Frankfurt !</figcaption>
-                    <figcaption>Price: 950€</figcaption>
-                </figure>
+                <form action="formular" method="post">
+                    <label>
+                        firstname:
+                        <input type="text" name="firstname" value="enter firstname">
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        lastname:
+                        <input type="text" name="lastname" value="enter lastname" required>
+                    </label>
+                    <br>
+                    <br>
+                    <label>
+                        email:
+                        <input type="mail" name="email" value="enter email">
+                    </label>
+                    <br>
+                    <br>
+                    <label>Give us more information:</label>
+                    <br>
+                    <textarea name="moreinfo"></textarea>
+                    <br>
+                    <br>
+                    <button onclick="location.href='success.html'" type="button">Send your inquiry!</button>
+                </form>
             </div>
         </div>
     </div>
